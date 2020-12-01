@@ -1,1 +1,59 @@
-/* Denna fil skall innehålla din CSS kod */
+.Gridwrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-areas: 
+    "he he he"
+    "im im a5"
+    "a1 a1 a6"
+    "a2 a2 a6"
+    "a3 a3 a6"
+    "a4 a4 a6"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 1px;
+
+}
+
+.header { 
+    grid-area: he;
+    font-size: 50px;
+}
+
+.image {
+    grid-area: im;
+}
+
+.article1 {
+    grid-area: a1;
+    font-size: 20px;
+}
+
+.article2 {
+    grid-area: a2;
+    font-size: 15px;
+}
+
+.article3 {
+    grid-area: a3;
+    font-size: 20px;
+}
+
+.article4 {
+    grid-area: a4;
+    font-size: 15px;
+}
+
+.article5 {
+    grid-area: a5;
+    font-size: 20px;
+}
+
+.article6 {
+    grid-area: a6;
+}
+
+.Gridwrapper {
+    background-color: antiquewhite;
+}
